@@ -1,0 +1,44 @@
+h1 {
+  color: #3a3353;
+  font-size: 20px;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 0.1fr 1fr 0.1fr;
+  grid-template-columns: 0.15fr 1fr 0.15fr;
+  grid-template-areas:
+    "instruction header controles"
+    "instruction jeu controles"
+    "instruction footer controles";
+
+  height: 100vh;
+  background-color: #fdf0d5;
+  gap: 50px;
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+  background-color: #0f8b8d;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #0f8b8d;
+}
+
+#instruction {
+  grid-area: instruction;
+  background-color: #0f8b8d;
+}
+
+#controles {
+  grid-area: controles;
+  background-color: #0f8b8d;
+}
+
+#jeu {
+  grid-area: jeu;
+  background-color: #b1b5c8;
+}
